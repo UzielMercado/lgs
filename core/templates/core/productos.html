@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Productos</h1>
+{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid" src="{% static 'core/img/mtg-productos.jpeg' %}" alt="">
+  </div>
+  <div class="col-lg-24 col-md-8">
+    <p1><a href="{% url 'cartas' %}">Variedad de Cartas</a></p1>
+  </div>
+</div>
+
+<div class="row project">
+  <div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid" src="{% static 'core/img/hero-productos.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-24 col-md-8">
+    <p2><a href="{% url 'figuras' %}">Nuestra variedad de figuras</a></p2>
+  </div>
+</div>
+
+
+{% endblock %}
